@@ -1,4 +1,4 @@
-def convert(lettre_rommaine):
+def convert_1_input(lettre_rommaine):
     if lettre_rommaine == 'I':
         return 1
     elif lettre_rommaine == 'V':
@@ -15,7 +15,8 @@ def convert(lettre_rommaine):
         return 1000
 
 
-def convert_add2(chaineLettreRomaine):
+def convert_same_add2(chaineLettreRomaine):
+    """"
     if chaineLettreRomaine == 'II':
         return 2
     elif chaineLettreRomaine == 'VV':
@@ -30,3 +31,12 @@ def convert_add2(chaineLettreRomaine):
         return 1000
     elif chaineLettreRomaine == 'MM':
         return 2000
+    """
+    for l in chaineLettreRomaine:
+        return convert_1_input(l)*2
+
+def convert_same_caract_n(chaine):
+    somme=0
+    for l in chaine:
+        somme = somme + convert_1_input(l)
+    return somme
