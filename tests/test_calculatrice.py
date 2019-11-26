@@ -30,3 +30,8 @@ def test_convert_same_caract_n():
     assert calc.convert_same_caract_n('CCC') == 300
     assert calc.convert_same_caract_n('DDD') == 1500
     assert calc.convert_same_caract_n('MMM') == 3000
+
+def test_convert_add():
+    assert calc.convert_add("IV") == 6
+    assert calc.convert_add("MIV") == 1006
+    assert calc.convert_add("MCMXLIV") == 2166

@@ -40,3 +40,9 @@ def convert_same_caract_n(chaine):
     for l in chaine:
         somme = somme + convert_1_input(l)
     return somme
+
+def convert_add(chaine):
+    somme = 0
+    for l in chaine:
+        somme = somme + convert_1_input(l)
+    return somme
