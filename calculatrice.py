@@ -33,16 +33,31 @@ def convert_same_add2(chaineLettreRomaine):
         return 2000
     """
     for l in chaineLettreRomaine:
-        return convert_1_input(l)*2
+        return convert_1_input(l) * 2
+
 
 def convert_same_caract_n(chaine):
-    somme=0
+    somme = 0
     for l in chaine:
         somme = somme + convert_1_input(l)
     return somme
+
 
 def convert_add(chaine):
     somme = 0
     for l in chaine:
         somme = somme + convert_1_input(l)
+    return somme
+
+
+def soustraction_2_caract(chaine):
+    somme = 0
+    c=0
+    for i in range(len(chaine)):
+        c = convert_1_input(chaine[i])
+        for j in range(i+1, len(chaine)):
+            if c < convert_1_input(chaine[j]):
+                c = convert_1_input(chaine[i])*-1
+        somme = c + somme
+
     return somme

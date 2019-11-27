@@ -35,3 +35,8 @@ def test_convert_add():
     assert calc.convert_add("IV") == 6
     assert calc.convert_add("MIV") == 1006
     assert calc.convert_add("MCMXLIV") == 2166
+
+
+def test_soustration_2_caract():
+    assert calc.soustraction_2_caract('IV') == 4
+    assert calc.soustraction_2_caract('IX') == 9
