@@ -46,3 +46,16 @@ def test_soustraction_n_caract():
     assert calc.soustraction_n_caract('XLV') == 45
     assert calc.soustraction_n_caract('VIII') == 8
     assert calc.soustraction_n_caract('MCMXCIX') == 1999
+    assert calc.soustraction_n_caract('III') == 3
+    assert calc.soustraction_n_caract('XII') == 12
+    assert calc.soustraction_n_caract('II') == 2
+
+
+def test_calculatrice():
+    assert calc.calculatrice('+','III','MCMXLIV') == 1947
+    assert calc.calculatrice('-', 'III', 'I') == 2
+    assert calc.calculatrice('-', 'I', 'III') == -2
+    assert calc.calculatrice('*', 'III', 'IV') == 12
+    assert calc.calculatrice('/', 'XII', 'II') == 6
+
+

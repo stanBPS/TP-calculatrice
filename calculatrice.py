@@ -72,3 +72,20 @@ def soustraction_n_caract(chaine):
                 c = convert_1_input(chaine[i]) * -1
         somme = c + somme
     return somme
+
+
+def calculatrice(operator, chaine1, chaine2):
+
+    resultat = 0
+    nombre1 = soustraction_n_caract(chaine1)
+    nombre2 = soustraction_n_caract(chaine2)
+
+    if operator == '+':
+        resultat = nombre1 + nombre2
+    elif operator == '-':
+        resultat = nombre1 - nombre2
+    elif operator == '*':
+        resultat = nombre1 * nombre2
+    elif operator == '/':
+        resultat = nombre1 / nombre2
+    return resultat
