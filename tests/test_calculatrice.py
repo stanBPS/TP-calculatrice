@@ -58,4 +58,22 @@ def test_calculatrice():
     assert calc.calculatrice('*', 'III', 'IV') == 12
     assert calc.calculatrice('/', 'XII', 'II') == 6
 
+def test_convert_1_to_roman():
+    assert calc.convert_1_to_roman(1) == 'I'
+    assert calc.convert_1_to_roman(5) == 'V'
+    assert calc.convert_1_to_roman(10) == 'X'
+    assert calc.convert_1_to_roman(50) == 'L'
+    assert calc.convert_1_to_roman(100) == 'C'
+    assert calc.convert_1_to_roman(500) == 'D'
+    assert calc.convert_1_to_roman(1000) == 'M'
 
+"""
+def test_return_plus_petit():
+    assert calc.return_plus_petit(6) == 'V'
+
+def test_convert_to_roman_n_add():
+    assert calc.convert_to_roman_n_add(2) == 'II'
+    assert calc.convert_to_roman_n_add(5) == 'V'
+    assert calc.convert_to_roman_n_add(10) == 'VV'
+    assert calc.convert_to_roman_n_add(1006) == 'MIV'
+"""

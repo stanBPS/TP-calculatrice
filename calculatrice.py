@@ -75,7 +75,6 @@ def soustraction_n_caract(chaine):
 
 
 def calculatrice(operator, chaine1, chaine2):
-
     resultat = 0
     nombre1 = soustraction_n_caract(chaine1)
     nombre2 = soustraction_n_caract(chaine2)
@@ -89,3 +88,37 @@ def calculatrice(operator, chaine1, chaine2):
     elif operator == '/':
         resultat = nombre1 / nombre2
     return resultat
+
+
+def convert_1_to_roman(num):
+    if num == 1:
+        return 'I'
+    elif num == 5:
+        return 'V'
+    elif num == 10:
+        return 'X'
+    elif num == 50:
+        return 'L'
+    elif num == 100:
+        return 'C'
+    elif num == 500:
+        return 'D'
+    elif num == 1000:
+        return 'M'
+
+""""
+def return_plus_petit(num)
+    list_roman_letter = [['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], ['D', 500], ['M', 1000]]
+    for i in range(len(list_roman_letter)):
+        if num <= l[i][1]:
+
+
+def convert_to_roman_n_add(num):
+    list_roman_letter = [['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], ['D', 500], ['M', 1000]]
+    i = num #1006
+    res = 0
+    while i != 0:
+        res = i/10
+
+"""
+
