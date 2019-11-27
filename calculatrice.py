@@ -52,12 +52,23 @@ def convert_add(chaine):
 
 def soustraction_2_caract(chaine):
     somme = 0
-    c=0
+    c = 0  # sauvegarde valeur de la lettre n-1 de la chaine
     for i in range(len(chaine)):
         c = convert_1_input(chaine[i])
-        for j in range(i+1, len(chaine)):
+        for j in range(i + 1, len(chaine)):
             if c < convert_1_input(chaine[j]):
-                c = convert_1_input(chaine[i])*-1
+                c = convert_1_input(chaine[i]) * -1
         somme = c + somme
+    return somme
 
+
+def soustraction_n_caract(chaine):
+    somme = 0
+    c = 0
+    for i in range(len(chaine)):
+        c = convert_1_input(chaine[i])
+        for j in range(i + 1, len(chaine)):
+            if c < convert_1_input(chaine[j]):
+                c = convert_1_input(chaine[i]) * -1
+        somme = c + somme
     return somme

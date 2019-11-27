@@ -40,3 +40,9 @@ def test_convert_add():
 def test_soustration_2_caract():
     assert calc.soustraction_2_caract('IV') == 4
     assert calc.soustraction_2_caract('IX') == 9
+
+def test_soustraction_n_caract():
+    assert calc.soustraction_n_caract('DIX') == 509
+    assert calc.soustraction_n_caract('XLV') == 45
+    assert calc.soustraction_n_caract('VIII') == 8
+    assert calc.soustraction_n_caract('MCMXCIX') == 1999
